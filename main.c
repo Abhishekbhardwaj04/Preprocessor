@@ -1,5 +1,6 @@
 #include "header.h"
 
+// This is main part start
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         printf("Usage: ./mypreprocessor <filename.c>\n");
@@ -11,6 +12,7 @@ int main(int argc, char *argv[]) {
     strcpy(outfile, infile);
     strcat(outfile, ".i");
 
+    // file operation is performing
     FILE *fin = fopen(infile, "r");
     if (!fin) {
         printf("Error opening input file.\n");
